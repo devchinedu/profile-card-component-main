@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: content-box;
+}
+:root {
+  --primary-dark-cyan: hsl(185, 75%, 39%);
+  --primary-very-dark-desat-rated-blue: hsl(229, 23%, 23%);
+  --primary-dark-grayish-blue: hsl(227, 10%, 46%);
+  --neutral-dark-gray: hsl(0, 0%, 59%);
+  --standart-font: "Kumbh sans", sans-serif;
+}
+
+body {
+  font-family: var(--standart-font);
+  font-size: 18px;
+  background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg),
+    var(--primary-dark-cyan);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-position: right 45vw bottom 45vh, left 45vw top 45vh;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.card {
+  background: floralwhite;
+  width: min(90vw, 500px);
+  height: min(58vh, 680px);
+  position: absolute;
+  top: 15%;
+  border-radius: 20px;
+  height: min(100vh, 500px);
+}
+
+.card-header {
+  background-image: url(images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 35%;
+
+  border-bottom: 1px solid hsla(229, 23%, 23%, 0.226);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cardimg {
+  background-color: ghostwhite;
+  width: 6.8rem;
+  height: 6.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: -60px;
+}
+
+.picholder {
+  border-radius: 50%;
+}
+.cardtext {
+  text-align: center;
+  margin: 5.1rem;
+
+  margin-bottom: 10px;
+}
+
+.cardtext p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+.cardtext p span {
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: var(--neutral-dark-gray);
+}
+
+.line {
+  content: "";
+  height: 1px;
+  background: var(--neutral-dark-gray);
+  opacity: 0.6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-very-dark-desat-rated-blue);
+}
+.social-info {
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 0.8rem;
+  color: var(--neutral-dark-gray);
+
+  margin-top: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+}
+.attribution a {
+  color: black;
+}
