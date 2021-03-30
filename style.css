@@ -1,9 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: content-box;
 }
+
 :root {
   --primary-dark-cyan: hsl(185, 75%, 39%);
   --primary-very-dark-desat-rated-blue: hsl(229, 23%, 23%);
@@ -29,10 +29,11 @@ main {
   justify-content: center;
   position: relative;
 }
+
 .card {
   background: floralwhite;
-  width: min(90vw, 500px);
-  height: min(58vh, 680px);
+  min-width: 500px;
+  min-height: 550px;
   position: absolute;
   top: 15%;
   border-radius: 20px;
@@ -89,8 +90,8 @@ main {
   height: 1px;
   background: var(--neutral-dark-gray);
   opacity: 0.6;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .social-number {
@@ -120,3 +121,5 @@ main {
 .attribution a {
   color: black;
 }
+
+
